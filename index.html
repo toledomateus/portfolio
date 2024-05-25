@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.png"
-      type="image/x-icon"
-    />
+    <link href="assets/img/light-mode-favicon.svg" rel="icon" media="(prefers-color-scheme: light)">
+    <link href="assets/img/dark-mode-favicon.png" rel="icon" media="(prefers-color-scheme: dark)">
 
     <!--=============== REMIXICONS ===============-->
     <link
@@ -59,10 +56,16 @@
             </li>
 
             <li class="nav__item">
+              <a href="#projects" class="nav__link">
+                <i class="ri-pages-line"></i> Projects
+              </a>
+            </li>
+
+            <!-- <li class="nav__item">
               <a href="#articles" class="nav__link">
                 <i class="ri-pages-line"></i> Articles
               </a>
-            </li>
+            </li> -->
 
             <li class="nav__item">
               <a href="#contact" class="nav__link">
@@ -78,7 +81,8 @@
 
         <div class="nav__buttons">
           <!-- Theme change button -->
-          <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+         
           <!-- Toggle button -->
           <div class="nav__toggle" id="nav-toggle">
             <i class="ri-menu-4-line"></i>
@@ -147,8 +151,8 @@
           <div class="home__info">
             <h3 class="home__info-title">BIOGRAPHY</h3>
             <p class="home__info-description">
-              Hey, I'm passionate about software developtment and problem
-              solving.<br />
+              I'm a software engineer with 8 years of experience.
+              My academic background includes a Master's degree in Computer Science, where I focused on Decision Making Under Conditions of Uncertainty and Optimization.
               Now based in Dublin, Ireland.
             </p>
           </div>
@@ -1001,12 +1005,61 @@
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Mateus</h1>
+        <p>Software Engineer</p>
+
+        <ul class="footer__list">
+          <li>
+            <a href="#home" class="footer__link active-link">Home</a>
+          </li>
+          <li>
+            <a href="#experience" class="footer__link">Experience</a>
+          </li>
+          <li>
+            <a href="#projects" class="footer__link">Projects</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social">
+          <a
+          href="https://www.linkedin.com/in/mateus-toledo"
+          target="_blank"
+          class="footer__social-link"
+        >
+          <i class="ri-linkedin-box-line"></i>
+        </a>
+
+        <a
+          href="https://github.com/toledomateus"
+          target="_blank"
+          class="footer__social-link"
+        >
+          <i class="ri-github-line"></i>
+        </a>
+
+        <a
+          href="https://dev.to/toledomateus"
+          target="_blank"
+          class="footer__social-link"
+        >
+          <i class="ri-code-box-line"></i>
+        </a>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; Copyright Mateus Toledo. All rights reserved
+        </span>
+      </div>
+    </footer>
 
     <!--========== SCROLL UP ==========-->
-
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
     <!--=============== SCROLLREVEAL ===============-->
-    <script src=""></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
 
     <!--=============== SWIPER JS ===============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
