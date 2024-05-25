@@ -71,8 +71,24 @@ const sendEmail = (e) => {
     contactMessage.textContent = 'Write all the input fields 📩'
 
   } else {
-    //Service ID = service_z9xyrpn
-    emailjs.sendForm('service_z9xyrpn','','')
+    //email.sondForm('serviceID','templateID','#formID', publickey)
+    emailjs.sendForm('service_z9xyrpn','template_dbhr3sh','#contact-form','p1JtK1k9_B7TcdE3R')
+      .then(() => {
+        contactMessage.classList.add('color-blue')
+        contactMessage.textContent = 'Message sent ✅'
+
+        setTimeout(() => {
+          contactMessage.textContent = ''
+        }, 5000)
+
+      }, (error)=>{
+        alert('Sorry! Something has failed: ', error)
+      })
+    
+    contactName.value = '',
+    contactEmail.value= '',
+    contactSubject.value = ''
+      
   }
 
 
