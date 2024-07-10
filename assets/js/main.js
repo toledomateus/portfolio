@@ -172,8 +172,8 @@ const sr = ScrollReveal({
   // reset: true /* Animations repeat */
 })
 
-sr.reveal(`.home__data`, `.projects__container, .footer__container`)
-sr.reveal(`.home__info div`, {delay: 600, origin: 'bottom', interval:100})
-sr.reveal(`.expertise__content:nth-child(1), .contact__content:nth-child(1)`, {delay: 600, origin: 'left'})
-sr.reveal(`.expertise__content:nth-child(2), .contact__content:nth-child(2)`, {delay: 600, origin: 'right'})
-sr.reveal(`.experience__content`, `.services_card` {interval: 100})
+sr.reveal('.home__data , .projects__container , .footer__container')
+sr.reveal('.home__info', {delay: 600, origin: 'bottom', interval:100})
+sr.reveal('.expertise__content:nth-child(1), .contact__content:nth-child(1)', {delay: 600, origin: 'left'})
+sr.reveal('.expertise__content:nth-child(2), .contact__content:nth-child(2)', {delay: 600, origin: 'right'})
+sr.reveal('.experience__content, .services__card', {interval: 100})
