@@ -323,8 +323,8 @@ body.dark-theme {
 }
 
 .home__perfil{
-  width: 200px;
-  height: 300px;
+  width: 220px;
+  height: 320px;
   background: var(--gradient-color);
   border-radius: 6.5rem;
   overflow: hidden;
@@ -334,8 +334,8 @@ body.dark-theme {
 }
 
 .home__perfil img{
-  width: 186px;
-  border-radius: 6.25rem;
+  width: 218px;
+  border-radius: 6.5rem;
   place-items: center;
 }
 
@@ -1133,8 +1133,8 @@ body.dark-theme {
   }
 
   .home__blob{
-    width: 400px;
-    height: 580px;
+    width: 350px;
+    height: 530px;
     border-radius: 12.5rem;
 
   }
@@ -1142,11 +1142,11 @@ body.dark-theme {
   .home__perfil{
     width: 340px;
     height: 520px;
-    border-radius: 10.6rem;
+    border-radius: 10.5rem;
   }
 
   .home__perfil img{
-    width: 320px;
+    width: 340px;
   }
 
   .home__shape-waves{
