@@ -1,1085 +1,889 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FAVICON ===============-->
-    <link
-      href="assets/img/light-mode-favicon.svg"
-      rel="icon"
-      media="(prefers-color-scheme: light)"
-    />
-    <link
-      href="assets/img/dark-mode-favicon.png"
-      rel="icon"
-      media="(prefers-color-scheme: dark)"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== REMIXICONS ===============-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+  <!--=============== FAVICON ===============-->
+  <link href="assets/img/light-mode-favicon.svg" rel="icon" media="(prefers-color-scheme: light)" />
+  <link href="assets/img/dark-mode-favicon.png" rel="icon" media="(prefers-color-scheme: dark)" />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-    <title>Mateus's Portfolio</title>
-  </head>
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
-  <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo"> Mateus </a>
+  <title>Mateus's Portfolio</title>
+</head>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-            <li class="nav__item">
-              <a href="#home" class="nav__link">
-                <i class="ri-home-line"></i> Home
-              </a>
-            </li>
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo"> Mateus </a>
 
-            <li class="nav__item">
-              <a href="#experience" class="nav__link">
-                <i class="ri-rocket-line"></i> Experience
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#projects" class="nav__link">
-                <i class="ri-pages-line"></i> Projects
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#expertise" class="nav__link">
-                <i class="ri-code-box-line"></i> Expertise
-              </a>
-            </li>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">
+              <i class="ri-home-line"></i> Home
+            </a>
+          </li>
 
-            <li class="nav__item">
-              <a href="#services" class="nav__link">
-                <i class="ri-briefcase-line"></i> Services
-              </a>
-            </li>
+          <li class="nav__item">
+            <a href="#experience" class="nav__link">
+              <i class="ri-rocket-line"></i> Experience
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">
+              <i class="ri-pages-line"></i> Projects
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#expertise" class="nav__link">
+              <i class="ri-code-box-line"></i> Expertise
+            </a>
+          </li>
 
-            <!-- <li class="nav__item">
+          <li class="nav__item">
+            <a href="#services" class="nav__link">
+              <i class="ri-briefcase-line"></i> Services
+            </a>
+          </li>
+
+          <!-- <li class="nav__item">
               <a href="#articles" class="nav__link">
                 <i class="ri-pages-line"></i> Articles
               </a>
             </li> -->
 
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="ri-chat-3-line"></i> Contact
-              </a>
-            </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="ri-chat-3-line"></i> Contact
+            </a>
+          </li>
+        </ul>
+        <!-- Close button -->
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+
+      <div class="nav__buttons">
+        <!-- Theme change button -->
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+      <div class="home__container container grid section__border">
+        <div class="home__data grid">
+          <h1 class="home__title">
+            Hi, I'm Mateus <br />
+            Reseacher AI Engineer <br />
+          </h1>
+
+          <div class="home__blob grid">
+            <div class="home__perfil">
+              <img src="assets/img/software-engineer.png" alt="home perfil" />
+            </div>
+            <img src="assets/img/shape-wawes.svg" alt="" class="home__shape-waves" />
+            <img src="assets/img/shape-circle.svg" alt="" class="home__shape-circle" />
+          </div>
+          <ul class="home__social">
+            <a href="https://www.linkedin.com/in/mateus-toledo" target="_blank" class="home__social-link">
+              <i class="ri-linkedin-box-line"></i>
+            </a>
+
+            <a href="https://github.com/toledomateus" target="_blank" class="home__social-link">
+              <i class="ri-github-line"></i>
+            </a>
+
+            <a href="https://dev.to/toledomateus" target="_blank" class="home__social-link">
+              <i class="ri-code-box-line"></i>
+            </a>
           </ul>
-          <!-- Close button -->
-          <div class="nav__close" id="nav-close">
-            <i class="ri-close-line"></i>
-          </div>
         </div>
 
-        <div class="nav__buttons">
-          <!-- Theme change button -->
-          <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-          <!-- Toggle button -->
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="ri-menu-4-line"></i>
-          </div>
+        <!--==================== HOME  INFO 1====================-->
+        <div class="home__info">
+          <h3 class="home__info-title">BIOGRAPHY</h3>
+          <p class="home__info-description">
+            Reseacher AI engineer with background in Recommender Systems, Explainable AI, and Decision-Making in Complex
+            Scenarios under Uncertainty.
+            Currently, Reseacher at University of Jaén with Master's in Computer Science (2023) and Bachelor's in
+            Electrical Engineer (2020).
+            <br>
+            Now based in Jaén, Spain.
+          </p>
         </div>
-      </nav>
-    </header>
+      </div>
+    </section>
 
-    <!--==================== MAIN ====================-->
-    <main class="main">
-      <!--==================== HOME ====================-->
-      <section class="home section" id="home">
-        <div class="home__container container grid section__border">
-          <div class="home__data grid">
-            <h1 class="home__title">
-              Hi, I'm Mateus <br />
-              Reseacher AI Engineer <br />
-            </h1>
+    <!--==================== EXPERIENCE ====================-->
+    <section class="experience section" id="experience">
+      <h2 class="section__title">Experience</h2>
+      <span class="section__subtitle"> Experience & Education </span>
 
-            <div class="home__blob grid">
-              <div class="home__perfil">
-                <img
-                  src="assets/img/software-engineer.jpg"
-                  alt="home perfil"
-                />
-              </div>
-              <img
-                src="assets/img/shape-wawes.svg"
-                alt=""
-                class="home__shape-waves"
-              />
-              <img
-                src="assets/img/shape-circle.svg"
-                alt=""
-                class="home__shape-circle"
-              />
+      <div class="experience__container container grid section__border">
+        <!--==================== EDUCATION ====================-->
+        <div class="experience__content">
+          <h3 class="experience__title">
+            <i class="ri-pencil-ruler-2-line"></i>
+            Education
+          </h3>
+
+          <div class="experience__info">
+            <div>
+              <h3 class="experience__name">Master in Computer Science</h3>
+              <span class="experience__country"> PUC Minas - Brazil </span>
+              <span class="experience__year"> 2021-2023 </span>
             </div>
-            <ul class="home__social">
-              <a
-                href="https://www.linkedin.com/in/mateus-toledo"
-                target="_blank"
-                class="home__social-link"
-              >
-                <i class="ri-linkedin-box-line"></i>
-              </a>
-
-              <a
-                href="https://github.com/toledomateus"
-                target="_blank"
-                class="home__social-link"
-              >
-                <i class="ri-github-line"></i>
-              </a>
-
-              <a
-                href="https://dev.to/toledomateus"
-                target="_blank"
-                class="home__social-link"
-              >
-                <i class="ri-code-box-line"></i>
-              </a>
-            </ul>
-          </div>
-
-          <!--==================== HOME  INFO 1====================-->
-          <div class="home__info">
-            <h3 class="home__info-title">BIOGRAPHY</h3>
-            <p class="home__info-description">
-              Reseacher AI engineer  with background in Recommender Systems, Explainable AI, and Decision-Making in Complex Scenarios under Uncertainty.
-              Currently, Reseacher at University of Jaén with Master's in Computer Science (2023) and Bachelor's in Electrical Engineer (2020).
-              <br>
-              Now based in Jaén, Spain.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!--==================== EXPERIENCE ====================-->
-      <section class="experience section" id="experience">
-        <h2 class="section__title">Experience</h2>
-        <span class="section__subtitle"> Experience & Education </span>
-
-        <div class="experience__container container grid section__border">
-          <!--==================== EDUCATION ====================-->
-          <div class="experience__content">
-            <h3 class="experience__title">
-              <i class="ri-pencil-ruler-2-line"></i>
-              Education
-            </h3>
-
-            <div class="experience__info">
-              <div>
-                <h3 class="experience__name">Master in Computer Science</h3>
-                <span class="experience__country"> PUC Minas - Brazil </span>
-                <span class="experience__year"> 2021-2023 </span>
-              </div>
-              <div>
-                <h3 class="experience__name">
-                  Bachelor in Electrical Engineering
-                </h3>
-                <span class="experience__country"> PUC Minas - Brazil </span>
-                <span class="experience__year"> 2016-2020 </span>
-              </div>
-            </div>
-          </div>
-          <!--==================== WORK ====================-->
-          <div class="experience__content">
-            <h3 class="experience__title">
-              <i class="ri-building-line"></i>
-              Work
-            </h3>
-             
-            <div class="experience__info">
-              <div>
-                <h3 class="experience__name">AI Reseacher</h3>
-                <span class="experience__country"> University of Jaén - Spain </span>
-                <span class="experience__year"> 2025-Current </span>
-              </div>
-            </div>
-
-            <div class="experience__info">
-              <div>
-                <h3 class="experience__name">Software Engineer</h3>
-                <span class="experience__country"> Contractor - Brazil </span>
-                <span class="experience__year"> 2023-2024 </span>
-              </div>
-            </div>
-
-            <div class="experience__info">
-              <div>
-                <h3 class="experience__name">Associate Reseacher</h3>
-                <span class="experience__country"> Vale - Brazil </span>
-                <span class="experience__year"> 2021-2023 </span>
-              </div>
-            </div>
-
-            <div class="experience__info">
-              <div>
-                <h3 class="experience__name">Software Engineer</h3>
-                <span class="experience__country"> SYDLE - Brazil </span>
-                <span class="experience__year"> 2020-2023 </span>
-              </div>
-            </div>
-
-            <div class="experience__info">
-              <div>
-                <h3 class="experience__name">Junior ML Engineer</h3>
-                <span class="experience__country"> Omdena - New York </span>
-                <span class="experience__year"> 2022-2022 </span>
-              </div>
-            </div>
-
-            <div class="experience__info">
-              <div>
-                <h3 class="experience__name">Co-Founder</h3>
-                <span class="experience__country"> Looksafe - Brazil </span>
-                <span class="experience__year"> 2019-2020 </span>
-              </div>
+            <div>
+              <h3 class="experience__name">
+                Bachelor in Electrical Engineering
+              </h3>
+              <span class="experience__country"> PUC Minas - Brazil </span>
+              <span class="experience__year"> 2016-2020 </span>
             </div>
           </div>
         </div>
-        <img
-          src="assets/img/shape-circle.svg"
-          alt="experience image"
-          class="experience__img"
-        />
-      </section>
-      <!--==================== PROJECTS ====================-->
-      <section class="projects" id="projects">
-        <h2 class="section__title">Projects</h2>
-        <span class="section__subtitle">
-          Open-source projects that I've been working on
-        </span>
-        <div class="container section__border">
-          <div class="projects__container swiper">
-            <div class="swiper-wrapper">
-              <!-- ==================== PROJECTS 1 ==================== -->
-              
-              <div class="projects__content swiper-slide">
-                <img
-                  src="assets/img/projects/taocp-pt-br.png"
-                  alt="projects image"
-                  class="projects__img"
-                />
+        <!--==================== WORK ====================-->
+        <div class="experience__content">
+          <h3 class="experience__title">
+            <i class="ri-building-line"></i>
+            Work
+          </h3>
 
-                <div>
-                  <!-- <p class="projects__subtitle">This project is to translate the acclaimed book The Art of Computer Programming by Donald Knuth, which is open source.</p> -->
-                  <p class="projects__subtitle">
-                    Translation for the book<br />The Art of Computer
-                    Programming by Donald Knuth
-                  </p>
-
-                  <h1 class="projetcs__title">TAOCP (Pt-Br)</h1>
-
-                  <a
-                    href="https://github.com/toledomateus/the-art-of-computer-programming-portuguese"
-                    class="projects__button"
-                  >
-                    View repo <i class="ri-arrow-right-line"></i>
-                  </a>
-                </div>
-              </div>
-        
-              <!--==================== PROJECTS 4 ====================-->
-
-              <div class="projects__content swiper-slide">
-                <img
-                  src="assets/img/projects/multicriteria-ports.webp"
-                  alt="projects image"
-                  class="projects__img"
-                />
-
-                <div>
-                  <!-- <span class="projects__subtitle">This project analyzes the planning of ore production shipped from mining company ports, utilizing multicriteria models.</span> -->
-                  <span class="projects__subtitle"
-                    >Multicriteria Decision-Making in Complex Scenarios<br />for
-                    planning ore production from mining company ports</span
-                  >
-
-                  <h1 class="projetcs__title">Decision-Making: Ore Export</h1>
-
-                  <a
-                    href="https://github.com/toledomateus/multicriteria-decision-making-mining-application"
-                    class="projects__button"
-                  >
-                    View repo <i class="ri-arrow-right-line"></i>
-                  </a>
-                </div>
-              </div>
-
-              <!--==================== PROJECTS 5 ====================-->
-              <div class="projects__content swiper-slide">
-                <img
-                  src="assets/img/projects/free-market-energy.webp"
-                  alt="projects image"
-                  class="projects__img"
-                />
-
-                <div>
-                  <!-- <span class="projects__subtitle">This project seeks a strategy to quantitatively analyze financial risks in Brazil's Free Energy Market, helping agents with decision-making by establishing risk metrics for contract portfolios.</span> -->
-                  <span class="projects__subtitle"
-                    >Strategy to quantitatively analyze financial risks in
-                    <br />Brazil's Free Energy Market.<b>Stack:</b> Javascript,
-                    SYDLE ONE</span
-                  >
-
-                  <h1 class="projetcs__title">
-                    Risk analysis for Enegery Market
-                  </h1>
-
-                  <a
-                    href="https://github.com/toledomateus/risk-analysis-free-energy-market"
-                    class="projects__button"
-                  >
-                    View repo <i class="ri-arrow-right-line"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Swiper arrows -->
-            <div class="swiper-button-next">
-              <i class="ri-arrow-right-s-line"></i>
-            </div>
-            <div class="swiper-button-prev">
-              <i class="ri-arrow-left-s-line"></i>
-            </div>
-
-            <!-- Swiper pagination -->
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-      <!--==================== EXPERTISE ====================-->
-      <section class="expertise section" id="expertise">
-        <h2 class="section__title">Expertise</h2>
-        <span class="section__subtitle">
-          I have experience with the following technologies.
-        </span>
-
-        <div class="expertise__container container grid section__border">
-          <!--==================== Languages ====================-->
-          <div class="expertise__content">
-            <h3 class="expertise__title">
-              <i class="ri-terminal-line"></i>
-              Languages
-            </h3>
-
-            <div class="expertise__info">
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/languages/logo-javascript.svg"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Javascript</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/languages/python.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Python</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/languages/typescript.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Typescript</h3>
-                <span class="expertise__subtitle">Interm. experience</span>
-              </div>
+          <div class="experience__info">
+            <div>
+              <h3 class="experience__name">AI Reseacher</h3>
+              <span class="experience__country"> University of Jaén - Spain </span>
+              <span class="experience__year"> 2025-Current </span>
             </div>
           </div>
-          <!--==================== FRONT END ====================-->
-          <div class="expertise__content">
-            <h3 class="expertise__title">
-              <i class="ri-pages-line"></i>
-              Frontend
-            </h3>
 
-            <div class="expertise__info">
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/frontend/html-1.svg"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">HTML</h3>
-                <span class="expertise__subtitle">Interm. experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/frontend/css-3.svg"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">CSS</h3>
-                <span class="expertise__subtitle">Interm. experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/frontend/react.svg"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">React</h3>
-                <span class="expertise__subtitle">Interm. experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/frontend/next.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Next.js</h3>
-                <span class="expertise__subtitle">Interm. experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/frontend/styled-components.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Sytle Comp.</h3>
-                <span class="expertise__subtitle">Interm. experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/frontend/tailwind.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Tailwind CSS</h3>
-                <span class="expertise__subtitle">Interm. experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/frontend/material-ui.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Material UI</h3>
-                <span class="expertise__subtitle">Interm. experience</span>
-              </div>
+          <div class="experience__info">
+            <div>
+              <h3 class="experience__name">Software Engineer</h3>
+              <span class="experience__country"> Contractor - Brazil </span>
+              <span class="experience__year"> 2023-2024 </span>
             </div>
           </div>
-          <!--==================== BACK END ====================-->
-          <div class="expertise__content">
-            <h3 class="expertise__title">
-              <i class="ri-braces-line"></i>
-              Backend
-            </h3>
 
-            <div class="expertise__info">
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/backend/node.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Node</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/backend/tornado.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Tornado.py</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/backend/express.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Express.js</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img src="assets/img/backend/jwt.png" alt="expertise image" />
-                </div>
-
-                <h3 class="expertise__name">JWT</h3>
-                <span class="expertise__subtitle">Interm. experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/devops/bcrypt.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Bcrypt</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/backend/apollo server.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Apollo server</h3>
-                <span class="expertise__subtitle">Interm. experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/backend/graphql.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">GraphQL</h3>
-                <span class="expertise__subtitle">Interm. experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/backend/nest.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Nest</h3>
-                <span class="expertise__subtitle">Interm. experience</span>
-              </div>
+          <div class="experience__info">
+            <div>
+              <h3 class="experience__name">Associate Reseacher</h3>
+              <span class="experience__country"> Vale - Brazil </span>
+              <span class="experience__year"> 2021-2023 </span>
             </div>
           </div>
-          <!--==================== DATA ANALYSIS ====================-->
-          <div class="expertise__content">
-            <h3 class="expertise__title">
-              <i class="ri-line-chart-line"></i>
-              Data analysis
-            </h3>
 
-            <div class="expertise__info">
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/data/jupyterlab.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Jupyterlab</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/data/matplotlib.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Matplotlib</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img src="assets/img/data/numpy.png" alt="expertise image" />
-                </div>
-
-                <h3 class="expertise__name">Numpy</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img src="assets/img/data/pandas.png" alt="expertise image" />
-                </div>
-
-                <h3 class="expertise__name">Pandas</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/data/seaborn.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Seaborn</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
+          <div class="experience__info">
+            <div>
+              <h3 class="experience__name">Software Engineer</h3>
+              <span class="experience__country"> SYDLE - Brazil </span>
+              <span class="experience__year"> 2020-2023 </span>
             </div>
           </div>
-          <!--==================== DATA BASE ====================-->
-          <div class="expertise__content">
-            <h3 class="expertise__title">
-              <i class="ri-database-2-line"></i>
-              Database
-            </h3>
 
-            <div class="expertise__info">
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/database/aws.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">AWS</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/database/elasticsearch.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Elasticsearch</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/database/mongodb.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">MongoDB</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/database/postgreSQL.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">PostgreSQL</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/database/heroku.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Heroku</h3>
-                <span class="expertise__subtitle">Interm. experience</span>
-              </div>
+          <div class="experience__info">
+            <div>
+              <h3 class="experience__name">Junior ML Engineer</h3>
+              <span class="experience__country"> Omdena - New York </span>
+              <span class="experience__year"> 2022-2022 </span>
             </div>
           </div>
-          <!--==================== DevOps ====================-->
-          <div class="expertise__content">
-            <h3 class="expertise__title">
-              <i class="ri-file-settings-line"></i>
-              Tools/Test
-            </h3>
-            <div class="expertise__info">
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/devops/docker.png"
-                    alt="expertise image"
-                  />
-                </div>
 
-                <h3 class="expertise__name">Docker</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/devops/git-icon.svg"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Git</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/devops/eslint.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">ESLint</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/devops/coveralls.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Coveralls</h3>
-                <span class="expertise__subtitle">
-                  code coverage <br />
-                  Interm. experience
-                </span>
-              </div>
-
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/devops/faker.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Faker</h3>
-                <span class="expertise__subtitle">
-                  info generate<br />
-                  Interm. experience
-                </span>
-              </div>
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/devops/husky.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Husky</h3>
-                <span class="expertise__subtitle">
-                  pre-commit<br />
-                  Interm. experience
-                </span>
-              </div>
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img src="assets/img/devops/jest.png" alt="expertise image" />
-                </div>
-
-                <h3 class="expertise__name">Jest</h3>
-                <span class="expertise__subtitle">
-                  Test lib<br />
-                  Interm. experience
-                </span>
-              </div>
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/devops/trevisci.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Trevis CI</h3>
-                <span class="expertise__subtitle">
-                  CI/CD<br />
-                  Interm. experience
-                </span>
-              </div>
-            </div>
-          </div>
-          <!--==================== Documentation ====================-->
-          <div class="expertise__content">
-            <h3 class="expertise__title">
-              <i class="ri-book-open-line"></i>
-              Documentation
-            </h3>
-
-            <div class="expertise__info">
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/documentation/bpms.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">BPM / BPMS</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/documentation/sydleone.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">SYDLE ONE</h3>
-                <span class="expertise__subtitle">Pro experience</span>
-              </div>
-              <div class="expertise__data">
-                <div class="expertise__blob">
-                  <img
-                    src="assets/img/documentation/swagger.png"
-                    alt="expertise image"
-                  />
-                </div>
-
-                <h3 class="expertise__name">Swagger</h3>
-                <span class="expertise__subtitle">Interm. experience</span>
-              </div>
+          <div class="experience__info">
+            <div>
+              <h3 class="experience__name">Co-Founder</h3>
+              <span class="experience__country"> Looksafe - Brazil </span>
+              <span class="experience__year"> 2019-2020 </span>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      <img src="assets/img/shape-circle.svg" alt="experience image" class="experience__img" />
+    </section>
+    <!--==================== PROJECTS ====================-->
+    <section class="projects" id="projects">
+      <h2 class="section__title">Projects</h2>
+      <span class="section__subtitle">
+        Open-source projects that I've been working on
+      </span>
+      <div class="container section__border">
+        <div class="projects__container swiper">
+          <div class="swiper-wrapper">
+            <!-- ==================== PROJECTS 1 ==================== -->
 
-      <!--==================== SERVICES ====================-->
-      <section class="services section" id="services">
-        <h2 class="section__title">Services</h2>
-        <span class="section__subtitle">How I can help your company</span>
-        <div class="services__container container grid section__border">
-          <div class="services__card">
-            <i class="ri-terminal-window-fill"></i>
-            <h2 class="services__title">Backend developtment</h2>
-            <p class="services__description">
-              Proficiency in delivering backend applications and integrations
-              with 3rd party APIs.Design and implement new APIs or maintain
-              existing ones.
-            </p>
-            <div class="services__border"></div>
-          </div>
-          <div class="services__card">
-            <i class="ri-pie-chart-box-line"></i>
-            <h2 class="services__title">Data analytics</h2>
-            <p class="services__description">
-              Experience in data analysis pipelines, from data cleaning to
-              delivering machine learning models. Skilled in enabling
-              stakeholders to make the best decisions under uncertain scenarios.
-            </p>
-            <div class="services__border"></div>
-          </div>
-          <div class="services__card">
-            <i class="ri-layout-2-line"></i>
-            <h2 class="services__title">Frontend developtment</h2>
-            <p class="services__description">
-              Proficiency in delivering frontend applications to design and
-              create new interfaces or maintain existing ones.
-            </p>
-            <div class="services__border"></div>
-          </div>
-        </div>
-      </section>
+            <div class="projects__content swiper-slide">
+              <img src="assets/img/projects/taocp-pt-br.png" alt="projects image" class="projects__img" />
 
-      <!--==================== CONTACT ====================-->
-      <section class="contact section" id="contact">
-        <h2 class="section__title">Contact me</h2>
-        <span class="section__subtitle"> Get in touch </span>
+              <div>
+                <!-- <p class="projects__subtitle">This project is to translate the acclaimed book The Art of Computer Programming by Donald Knuth, which is open source.</p> -->
+                <p class="projects__subtitle">
+                  Translation for the book<br />The Art of Computer
+                  Programming by Donald Knuth
+                </p>
 
-        <div class="contact__container container grid section__border">
-          <div class="contact__content">
-            <h3 class="contact__title">
-              <i class="ri-chat-3-line"></i> Talk to me
-            </h3>
+                <h1 class="projetcs__title">TAOCP (Pt-Br)</h1>
 
-            <div class="contact__info">
-              <div class="contact__data">
-                <span class="contact__data-title">Email</span>
-                <span class="contact__data-info">me@toledomateus.com</span>
+                <a href="https://github.com/toledomateus/the-art-of-computer-programming-portuguese"
+                  class="projects__button">
+                  View repo <i class="ri-arrow-right-line"></i>
+                </a>
               </div>
+            </div>
 
-              <div class="contact__data">
-                <span class="contact__data-title">Whatsapp</span>
-                <span class="contact__data-info">+353 87 475 2975</span>
-                <a
-                  href="https://api.whatsapp.com/send?phone=353874752975&text=Hi, how are you? I noticed your portfolio and I'd like to have a chat about it!"
-                  target="_blank"
-                  class="contact__button"
-                >
-                  Write me <i class="ri-arrow-right-line"></i>
+            <!--==================== PROJECTS 4 ====================-->
+
+            <div class="projects__content swiper-slide">
+              <img src="assets/img/projects/multicriteria-ports.webp" alt="projects image" class="projects__img" />
+
+              <div>
+                <!-- <span class="projects__subtitle">This project analyzes the planning of ore production shipped from mining company ports, utilizing multicriteria models.</span> -->
+                <span class="projects__subtitle">Multicriteria Decision-Making in Complex Scenarios<br />for
+                  planning ore production from mining company ports</span>
+
+                <h1 class="projetcs__title">Decision-Making: Ore Export</h1>
+
+                <a href="https://github.com/toledomateus/multicriteria-decision-making-mining-application"
+                  class="projects__button">
+                  View repo <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PROJECTS 5 ====================-->
+            <div class="projects__content swiper-slide">
+              <img src="assets/img/projects/free-market-energy.webp" alt="projects image" class="projects__img" />
+
+              <div>
+                <!-- <span class="projects__subtitle">This project seeks a strategy to quantitatively analyze financial risks in Brazil's Free Energy Market, helping agents with decision-making by establishing risk metrics for contract portfolios.</span> -->
+                <span class="projects__subtitle">Strategy to quantitatively analyze financial risks in
+                  <br />Brazil's Free Energy Market.<b>Stack:</b> Javascript,
+                  SYDLE ONE</span>
+
+                <h1 class="projetcs__title">
+                  Risk analysis for Enegery Market
+                </h1>
+
+                <a href="https://github.com/toledomateus/risk-analysis-free-energy-market" class="projects__button">
+                  View repo <i class="ri-arrow-right-line"></i>
                 </a>
               </div>
             </div>
           </div>
-          <div class="contact__content">
-            <h3 class="contact__title">
-              <i class="ri-send-plane-line"></i> Send me an email
-            </h3>
 
-            <form action="" class="contact__form" id="contact-form">
-              <div class="contact__form-div">
-                <label class="contact__form-tag">Name</label>
-                <input
-                  type="text"
-                  name="user_name"
-                  required
-                  placeholder="Write your name"
-                  class="contact__form-input"
-                  id="contact-name"
-                />
+          <!-- Swiper arrows -->
+          <div class="swiper-button-next">
+            <i class="ri-arrow-right-s-line"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="ri-arrow-left-s-line"></i>
+          </div>
+
+          <!-- Swiper pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!--==================== EXPERTISE ====================-->
+    <section class="expertise section" id="expertise">
+      <h2 class="section__title">Expertise</h2>
+      <span class="section__subtitle">
+        I have experience with the following technologies.
+      </span>
+
+      <div class="expertise__container container grid section__border">
+        <!--==================== Languages ====================-->
+        <div class="expertise__content">
+          <h3 class="expertise__title">
+            <i class="ri-terminal-line"></i>
+            Languages
+          </h3>
+
+          <div class="expertise__info">
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/languages/logo-javascript.svg" alt="expertise image" />
               </div>
 
-              <div class="contact__form-div">
-                <label class="contact__form-tag">Email</label>
-                <input
-                  type="text"
-                  name="user_email"
-                  required
-                  placeholder="Write your email"
-                  class="contact__form-input"
-                  id="contact-email"
-                />
+              <h3 class="expertise__name">Javascript</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/languages/python.png" alt="expertise image" />
               </div>
 
-              <div class="contact__form-div contact__form-area">
-                <label class="contact__form-tag">Subject</label>
-                <textarea
-                  name="user_subject"
-                  placeholder="Tell me your subject..."
-                  id="contact-subject"
-                  class="contact__form-input"
-                ></textarea>
+              <h3 class="expertise__name">Python</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/languages/typescript.png" alt="expertise image" />
               </div>
 
-              <p class="contact__mesage" id="contact-message"></p>
-              <button type="submit" class="contact__button">
-                Submit <i class="ri-arrow-right-up-line"></i>
-              </button>
-            </form>
+              <h3 class="expertise__name">Typescript</h3>
+              <span class="expertise__subtitle">Interm. experience</span>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
+        <!--==================== FRONT END ====================-->
+        <div class="expertise__content">
+          <h3 class="expertise__title">
+            <i class="ri-pages-line"></i>
+            Frontend
+          </h3>
 
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
-      <div class="footer__container container">
-        <h1 class="footer__title">Mateus</h1>
-        <p>Software Engineer</p>
+          <div class="expertise__info">
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/frontend/html-1.svg" alt="expertise image" />
+              </div>
 
-        <ul class="footer__list">
-          <li>
-            <a href="#home" class="footer__link active-link">Home</a>
-          </li>
-          <li>
-            <a href="#experience" class="footer__link">Experience</a>
-          </li>
-          <li>
-            <a href="#projects" class="footer__link">Projects</a>
-          </li>
-        </ul>
+              <h3 class="expertise__name">HTML</h3>
+              <span class="expertise__subtitle">Interm. experience</span>
+            </div>
 
-        <ul class="footer__social">
-          <a
-            href="https://www.linkedin.com/in/mateus-toledo"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="ri-linkedin-box-line"></i>
-          </a>
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/frontend/css-3.svg" alt="expertise image" />
+              </div>
 
-          <a
-            href="https://github.com/toledomateus"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="ri-github-line"></i>
-          </a>
+              <h3 class="expertise__name">CSS</h3>
+              <span class="expertise__subtitle">Interm. experience</span>
+            </div>
 
-          <a
-            href="https://dev.to/toledomateus"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="ri-code-box-line"></i>
-          </a>
-        </ul>
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/frontend/react.svg" alt="expertise image" />
+              </div>
 
-        <span class="footer__copy">
-          &#169; Copyright Mateus Toledo. All rights reserved
-        </span>
+              <h3 class="expertise__name">React</h3>
+              <span class="expertise__subtitle">Interm. experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/frontend/next.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Next.js</h3>
+              <span class="expertise__subtitle">Interm. experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/frontend/styled-components.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Sytle Comp.</h3>
+              <span class="expertise__subtitle">Interm. experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/frontend/tailwind.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Tailwind CSS</h3>
+              <span class="expertise__subtitle">Interm. experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/frontend/material-ui.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Material UI</h3>
+              <span class="expertise__subtitle">Interm. experience</span>
+            </div>
+          </div>
+        </div>
+        <!--==================== BACK END ====================-->
+        <div class="expertise__content">
+          <h3 class="expertise__title">
+            <i class="ri-braces-line"></i>
+            Backend
+          </h3>
+
+          <div class="expertise__info">
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/backend/node.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Node</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/backend/tornado.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Tornado.py</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/backend/express.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Express.js</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/backend/jwt.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">JWT</h3>
+              <span class="expertise__subtitle">Interm. experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/devops/bcrypt.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Bcrypt</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/backend/apollo server.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Apollo server</h3>
+              <span class="expertise__subtitle">Interm. experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/backend/graphql.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">GraphQL</h3>
+              <span class="expertise__subtitle">Interm. experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/backend/nest.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Nest</h3>
+              <span class="expertise__subtitle">Interm. experience</span>
+            </div>
+          </div>
+        </div>
+        <!--==================== DATA ANALYSIS ====================-->
+        <div class="expertise__content">
+          <h3 class="expertise__title">
+            <i class="ri-line-chart-line"></i>
+            Data analysis
+          </h3>
+
+          <div class="expertise__info">
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/data/jupyterlab.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Jupyterlab</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/data/matplotlib.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Matplotlib</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/data/numpy.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Numpy</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/data/pandas.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Pandas</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/data/seaborn.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Seaborn</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+          </div>
+        </div>
+        <!--==================== DATA BASE ====================-->
+        <div class="expertise__content">
+          <h3 class="expertise__title">
+            <i class="ri-database-2-line"></i>
+            Database
+          </h3>
+
+          <div class="expertise__info">
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/database/aws.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">AWS</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/database/elasticsearch.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Elasticsearch</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/database/mongodb.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">MongoDB</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/database/postgreSQL.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">PostgreSQL</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/database/heroku.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Heroku</h3>
+              <span class="expertise__subtitle">Interm. experience</span>
+            </div>
+          </div>
+        </div>
+        <!--==================== DevOps ====================-->
+        <div class="expertise__content">
+          <h3 class="expertise__title">
+            <i class="ri-file-settings-line"></i>
+            Tools/Test
+          </h3>
+          <div class="expertise__info">
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/devops/docker.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Docker</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/devops/git-icon.svg" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Git</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/devops/eslint.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">ESLint</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/devops/coveralls.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Coveralls</h3>
+              <span class="expertise__subtitle">
+                code coverage <br />
+                Interm. experience
+              </span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/devops/faker.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Faker</h3>
+              <span class="expertise__subtitle">
+                info generate<br />
+                Interm. experience
+              </span>
+            </div>
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/devops/husky.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Husky</h3>
+              <span class="expertise__subtitle">
+                pre-commit<br />
+                Interm. experience
+              </span>
+            </div>
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/devops/jest.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Jest</h3>
+              <span class="expertise__subtitle">
+                Test lib<br />
+                Interm. experience
+              </span>
+            </div>
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/devops/trevisci.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Trevis CI</h3>
+              <span class="expertise__subtitle">
+                CI/CD<br />
+                Interm. experience
+              </span>
+            </div>
+          </div>
+        </div>
+        <!--==================== Documentation ====================-->
+        <div class="expertise__content">
+          <h3 class="expertise__title">
+            <i class="ri-book-open-line"></i>
+            Documentation
+          </h3>
+
+          <div class="expertise__info">
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/documentation/bpms.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">BPM / BPMS</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/documentation/sydleone.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">SYDLE ONE</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/documentation/swagger.png" alt="expertise image" />
+              </div>
+
+              <h3 class="expertise__name">Swagger</h3>
+              <span class="expertise__subtitle">Interm. experience</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
+    </section>
 
-    <!--========== SCROLL UP ==========-->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="ri-arrow-up-line"></i>
-    </a>
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
+    <!--==================== SERVICES ====================-->
+    <section class="services section" id="services">
+      <h2 class="section__title">Services</h2>
+      <span class="section__subtitle">How I can help your company</span>
+      <div class="services__container container grid section__border">
+        <div class="services__card">
+          <i class="ri-terminal-window-fill"></i>
+          <h2 class="services__title">Backend developtment</h2>
+          <p class="services__description">
+            Proficiency in delivering backend applications and integrations
+            with 3rd party APIs.Design and implement new APIs or maintain
+            existing ones.
+          </p>
+          <div class="services__border"></div>
+        </div>
+        <div class="services__card">
+          <i class="ri-pie-chart-box-line"></i>
+          <h2 class="services__title">Data analytics</h2>
+          <p class="services__description">
+            Experience in data analysis pipelines, from data cleaning to
+            delivering machine learning models. Skilled in enabling
+            stakeholders to make the best decisions under uncertain scenarios.
+          </p>
+          <div class="services__border"></div>
+        </div>
+        <div class="services__card">
+          <i class="ri-layout-2-line"></i>
+          <h2 class="services__title">Frontend developtment</h2>
+          <p class="services__description">
+            Proficiency in delivering frontend applications to design and
+            create new interfaces or maintain existing ones.
+          </p>
+          <div class="services__border"></div>
+        </div>
+      </div>
+    </section>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--==================== CONTACT ====================-->
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Contact me</h2>
+      <span class="section__subtitle"> Get in touch </span>
 
-    <!--=============== EMAIL JS ===============-->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
+      <div class="contact__container container grid section__border">
+        <div class="contact__content">
+          <h3 class="contact__title">
+            <i class="ri-chat-3-line"></i> Talk to me
+          </h3>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
-  </body>
+          <div class="contact__info">
+            <div class="contact__data">
+              <span class="contact__data-title">Email</span>
+              <span class="contact__data-info">me@toledomateus.com</span>
+            </div>
+
+            <div class="contact__data">
+              <span class="contact__data-title">Whatsapp</span>
+              <span class="contact__data-info">+353 87 475 2975</span>
+              <a href="https://api.whatsapp.com/send?phone=353874752975&text=Hi, how are you? I noticed your portfolio and I'd like to have a chat about it!"
+                target="_blank" class="contact__button">
+                Write me <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contact__content">
+          <h3 class="contact__title">
+            <i class="ri-send-plane-line"></i> Send me an email
+          </h3>
+
+          <form action="" class="contact__form" id="contact-form">
+            <div class="contact__form-div">
+              <label class="contact__form-tag">Name</label>
+              <input type="text" name="user_name" required placeholder="Write your name" class="contact__form-input"
+                id="contact-name" />
+            </div>
+
+            <div class="contact__form-div">
+              <label class="contact__form-tag">Email</label>
+              <input type="text" name="user_email" required placeholder="Write your email" class="contact__form-input"
+                id="contact-email" />
+            </div>
+
+            <div class="contact__form-div contact__form-area">
+              <label class="contact__form-tag">Subject</label>
+              <textarea name="user_subject" placeholder="Tell me your subject..." id="contact-subject"
+                class="contact__form-input"></textarea>
+            </div>
+
+            <p class="contact__mesage" id="contact-message"></p>
+            <button type="submit" class="contact__button">
+              Submit <i class="ri-arrow-right-up-line"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="footer__container container">
+      <h1 class="footer__title">Mateus</h1>
+      <p>Software Engineer</p>
+
+      <ul class="footer__list">
+        <li>
+          <a href="#home" class="footer__link active-link">Home</a>
+        </li>
+        <li>
+          <a href="#experience" class="footer__link">Experience</a>
+        </li>
+        <li>
+          <a href="#projects" class="footer__link">Projects</a>
+        </li>
+      </ul>
+
+      <ul class="footer__social">
+        <a href="https://www.linkedin.com/in/mateus-toledo" target="_blank" class="footer__social-link">
+          <i class="ri-linkedin-box-line"></i>
+        </a>
+
+        <a href="https://github.com/toledomateus" target="_blank" class="footer__social-link">
+          <i class="ri-github-line"></i>
+        </a>
+
+        <a href="https://dev.to/toledomateus" target="_blank" class="footer__social-link">
+          <i class="ri-code-box-line"></i>
+        </a>
+      </ul>
+
+      <span class="footer__copy">
+        &#169; Copyright Mateus Toledo. All rights reserved
+      </span>
+    </div>
+  </footer>
+
+  <!--========== SCROLL UP ==========-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+  </a>
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="assets/js/scrollreveal.min.js"></script>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!--=============== EMAIL JS ===============-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
