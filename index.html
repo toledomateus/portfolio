@@ -4,6 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://toledomateus.github.io/portfolio">
+  <meta property="og:title" content="Mateus Toledo - AI Researcher & Software Engineer">
+  <meta property="og:description"
+    content="PhD Candidate in AI. Specializing in XAI, Recommender Systems, and Optimization. View my research and projects.">
+  <meta property="og:image" content="https://toledomateus.github.io/portfolio/assets/img/software-engineer.png">
+
 
   <!--=============== FAVICON ===============-->
   <link href="assets/img/light-mode-favicon.svg" rel="icon" media="(prefers-color-scheme: light)" />
@@ -18,14 +26,14 @@
   <!--=============== CSS ===============-->
   <link rel="stylesheet" href="assets/css/styles.css" />
 
-  <title>Mateus's Portfolio</title>
+  <title>Mateus Toledo - AI Researcher & Software Engineer</title>
 </head>
 
 <body>
   <!--==================== HEADER ====================-->
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="#" class="nav__logo"> Mateus </a>
+      <a href="#" class="nav__logo"> Mateus Toledo </a>
 
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list grid">
@@ -40,28 +48,30 @@
               <i class="ri-rocket-line"></i> Experience
             </a>
           </li>
+
           <li class="nav__item">
-            <a href="#projects" class="nav__link">
-              <i class="ri-pages-line"></i> Projects
+            <a href="#publications" class="nav__link">
+              <i class="ri-article-line"></i> Publications
             </a>
           </li>
+
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">
+              <i class="ri-code-s-slash-line"></i> Projects
+            </a>
+          </li>
+
           <li class="nav__item">
             <a href="#expertise" class="nav__link">
               <i class="ri-code-box-line"></i> Expertise
             </a>
           </li>
 
-          <li class="nav__item">
+          <!-- <li class="nav__item">
             <a href="#services" class="nav__link">
               <i class="ri-briefcase-line"></i> Services
             </a>
-          </li>
-
-          <!-- <li class="nav__item">
-              <a href="#articles" class="nav__link">
-                <i class="ri-pages-line"></i> Articles
-              </a>
-            </li> -->
+          </li> -->
 
           <li class="nav__item">
             <a href="#contact" class="nav__link">
@@ -95,7 +105,7 @@
         <div class="home__data grid">
           <h1 class="home__title">
             Hi, I'm Mateus <br />
-            Reseacher AI Engineer <br />
+            AI Researcher & <br /> Software Engineer
           </h1>
 
           <div class="home__blob grid">
@@ -114,23 +124,36 @@
               <i class="ri-github-line"></i>
             </a>
 
-            <a href="https://dev.to/toledomateus" target="_blank" class="home__social-link">
-              <i class="ri-code-box-line"></i>
+            <a href="https://orcid.org/0009-0006-4387-6481" target="_blank" class="home__social-link">
+              <i class="ri-article-line"></i>
+            </a>
+
+            <a href="https://www.researchgate.net/profile/Mateus-Toledo" target="_blank" class="home__social-link">
+              <i class="ri-file-list-3-line"></i>
             </a>
           </ul>
+
         </div>
 
         <!--==================== HOME  INFO 1====================-->
         <div class="home__info">
           <h3 class="home__info-title">BIOGRAPHY</h3>
           <p class="home__info-description">
-            Reseacher AI engineer with background in Recommender Systems, Explainable AI, and Decision-Making in Complex
-            Scenarios under Uncertainty.
-            Currently, Reseacher at University of Jaén with Master's in Computer Science (2023) and Bachelor's in
-            Electrical Engineer (2020).
-            <br>
-            Now based in Jaén, Spain.
+            AI Researcher and Software Engineer passionate about building transparent and fair AI for complex
+            decision-making.
+            My work bridges advanced research in Explainable AI (XAI), Recommender Systems, and Fairness with practical
+            operational needs.
+            <br><br>
+            Currently conducting research at the University of Jaén (UJA), ranked #1 in Spain for Computer Science
+            Research Quality (THE 2025), #40 globally.
+            <br><br>
+            Based in Jaén, Spain.
           </p>
+          <div class="home__cv">
+            <a href="assets/files/cv.pdf" download="Mateus_Toledo_CV.pdf" class="home__cv-button">
+              <i class="ri-download-line"></i> Download CV
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -150,16 +173,22 @@
 
           <div class="experience__info">
             <div>
-              <h3 class="experience__name">Master in Computer Science</h3>
+              <h3 class="experience__name">PhD Candidate</h3>
+              <span class="experience__country"> UJA - Spain </span>
+              <span class="experience__year"> 2025 - Present </span>
+            </div>
+
+            <div>
+              <h3 class="experience__name">Master's in Optimization and Decision-Making</h3>
               <span class="experience__country"> PUC Minas - Brazil </span>
-              <span class="experience__year"> 2021-2023 </span>
+              <span class="experience__year"> 2021 - 2023 </span>
             </div>
             <div>
               <h3 class="experience__name">
-                Bachelor in Electrical Engineering
+                Bachelor's in Electrical Engineering
               </h3>
               <span class="experience__country"> PUC Minas - Brazil </span>
-              <span class="experience__year"> 2016-2020 </span>
+              <span class="experience__year"> 2016 - 2020 </span>
             </div>
           </div>
         </div>
@@ -172,120 +201,274 @@
 
           <div class="experience__info">
             <div>
-              <h3 class="experience__name">AI Reseacher</h3>
+              <h3 class="experience__name">AI Researcher</h3>
               <span class="experience__country"> University of Jaén - Spain </span>
-              <span class="experience__year"> 2025-Current </span>
+              <span class="experience__year"> Jan 2025 - Present </span>
             </div>
           </div>
 
           <div class="experience__info">
             <div>
-              <h3 class="experience__name">Software Engineer</h3>
-              <span class="experience__country"> Contractor - Brazil </span>
-              <span class="experience__year"> 2023-2024 </span>
+              <h3 class="experience__name">Full Stack Engineer (Contractor)</h3>
+              <span class="experience__country"> Freelancer - Ireland </span>
+              <span class="experience__year"> May 2023 - Sep 2024 </span>
             </div>
           </div>
 
           <div class="experience__info">
             <div>
-              <h3 class="experience__name">Associate Reseacher</h3>
-              <span class="experience__country"> Vale - Brazil </span>
-              <span class="experience__year"> 2021-2023 </span>
+              <h3 class="experience__name">Master's Thesis Researcher</h3>
+              <span class="experience__country"> Vale Innovation Hub - Brazil </span>
+              <span class="experience__year"> Dec 2021 - Sep 2023 </span>
             </div>
           </div>
 
           <div class="experience__info">
             <div>
-              <h3 class="experience__name">Software Engineer</h3>
+              <h3 class="experience__name">Software Engineer & Technical Trainer</h3>
               <span class="experience__country"> SYDLE - Brazil </span>
-              <span class="experience__year"> 2020-2023 </span>
+              <span class="experience__year"> Jan 2020 - Jun 2023 </span>
             </div>
           </div>
 
           <div class="experience__info">
             <div>
-              <h3 class="experience__name">Junior ML Engineer</h3>
+              <h3 class="experience__name">Associate AI Engineer</h3>
               <span class="experience__country"> Omdena - New York </span>
-              <span class="experience__year"> 2022-2022 </span>
+              <span class="experience__year"> Jan 2022 - Apr 2022 </span>
             </div>
           </div>
 
           <div class="experience__info">
             <div>
-              <h3 class="experience__name">Co-Founder</h3>
+              <h3 class="experience__name">Co-Founder & CTO</h3>
               <span class="experience__country"> Looksafe - Brazil </span>
-              <span class="experience__year"> 2019-2020 </span>
+              <span class="experience__year"> Feb 2019 - Feb 2020 </span>
             </div>
           </div>
         </div>
       </div>
       <img src="assets/img/shape-circle.svg" alt="experience image" class="experience__img" />
     </section>
+
+    <!--==================== PUBLICATIONS ====================-->
+    <section class="publications section" id="publications">
+      <h2 class="section__title">Publications</h2>
+      <span class="section__subtitle">Research contributions and academic work</span>
+
+      <div class="publications__container container grid section__border">
+        <div class="publications__content">
+
+          <div class="publications__item">
+            <h4 class="publications__title">
+              GREX: A Platform for Supporting Explanations in Group Recommender Systems
+            </h4>
+            <p class="publications__authors">
+              Toledo, M., Yera, R., Barranco, M.J., Dutta, B.
+            </p>
+            <p class="publications__venue">
+              IDEAL 2025. Lecture Notes in Computer Science, vol 16239. Springer, Cham.
+            </p>
+            <a href="https://doi.org/10.1007/978-3-032-10489-2_9" target="_blank" class="publications__link">
+              <i class="ri-external-link-line"></i> View Publication
+            </a>
+          </div>
+
+          <div class="publications__item">
+            <h4 class="publications__title">
+              On Multicriteria Decision-Making Under Conditions of Uncertainty
+            </h4>
+            <p class="publications__authors">
+              Pereira Júnior, J.G., Ekel, P.I., Palhares, R.M., Parreiras, R.O., & Leão, M.T.
+            </p>
+            <p class="publications__venue">
+              2025. Book Chapter, PUC Minas. ISBN 978-65-88547-80-9
+            </p>
+            <a href="https://www.editora.pucminas.br/arquivos/obra/arquivo_digital/331/tomada_decisao_multicriterio.pdf#page=15"
+              target="_blank" class="publications__link">
+              <i class="ri-external-link-line"></i> View Publication
+            </a>
+          </div>
+
+          <div class="publications__item">
+            <h4 class="publications__title">
+              Scenario Building for Multicriteria Analysis Using Group Decision-Making
+            </h4>
+            <p class="publications__authors">
+              Figueiredo, L.R., Frej, E.A., Soares, G.L., Ekel, P.I., & Leão, M.T.
+            </p>
+            <p class="publications__venue">
+              2025. Book Chapter, PUC Minas. ISBN 978-65-88547-80-9
+            </p>
+            <a href="https://www.editora.pucminas.br/arquivos/obra/arquivo_digital/331/tomada_decisao_multicriterio.pdf#page=117"
+              target="_blank" class="publications__link">
+              <i class="ri-external-link-line"></i> View Publication
+            </a>
+          </div>
+
+          <div class="publications__item">
+            <h4 class="publications__title">
+              A Multicriteria Decision-Making in Conditions of Uncertainty for Ports' Ore Exportation
+            </h4>
+            <p class="publications__authors">
+              Leão, M.T., Ekel, P., & Liborio, M.P.
+            </p>
+            <p class="publications__venue">
+              2023. PARIPEX - Indian Journal of Research, 12(7), 1–5.
+            </p>
+            <a href="https://doi.org/10.36106/paripex/9507597" target="_blank" class="publications__link">
+              <i class="ri-external-link-line"></i> View Publication
+            </a>
+          </div>
+
+          <div class="publications__item">
+            <h4 class="publications__title">
+              Multicriteria Decision-Making Under Conditions of Uncertainty in Port Ore Flow (Master's Thesis)
+            </h4>
+            <p class="publications__authors">
+              Leão, M.T.
+            </p>
+            <p class="publications__venue">
+              2023. PUC Minas, Computer Science Graduate Program
+            </p>
+            <a href="https://doi.org/10.13140/RG.2.2.11201.88168" target="_blank" class="publications__link">
+              <i class="ri-external-link-line"></i> View Thesis
+            </a>
+          </div>
+
+          <div class="publications__item">
+            <h4 class="publications__title">
+              Can Logic Assist in Achieving Legal Certainty in Judicial Decisions?
+            </h4>
+            <p class="publications__authors">
+              Toledo, I.H.L., & Leão, M.T.
+            </p>
+            <p class="publications__venue">
+              2022. Studies in Public and Private Law: Volume VI. ISBN 978-65-88331-55-2
+            </p>
+            <a href="https://www.researchgate.net/publication/388451366_A_logica_pode_auxiliar_na_obtencao_de_seguranca_juridica_nas_decisoes_judiciais_Can_logic_assist_in_achieving_legal_certainty_in_judicial_decisions"
+              target="_blank" class="publications__link">
+              <i class="ri-external-link-line"></i> View Publication
+            </a>
+          </div>
+
+          <div class="publications__item">
+            <h4 class="publications__title">
+              Contracts in the Free Energy Market and Risk Analysis Strategy (Bachelor's Thesis)
+            </h4>
+            <p class="publications__authors">
+              Leão, M.T.
+            </p>
+            <p class="publications__venue">
+              2020. PUC Minas, Electrical Engineering
+            </p>
+            <a href="https://doi.org/10.13140/RG.2.2.24204.22406" target="_blank" class="publications__link">
+              <i class="ri-external-link-line"></i> View Thesis
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
     <!--==================== PROJECTS ====================-->
+
     <section class="projects" id="projects">
       <h2 class="section__title">Projects</h2>
       <span class="section__subtitle">
-        Open-source projects that I've been working on
+        Open-source projects and contributions
       </span>
       <div class="container section__border">
         <div class="projects__container swiper">
           <div class="swiper-wrapper">
-            <!-- ==================== PROJECTS 1 ==================== -->
+            <!-- ==================== PROJECT 1 ==================== -->
+            <div class="projects__content swiper-slide">
+              <img src="assets/img/projects/pygrex.png" alt="projects image" class="projects__img" />
 
+              <div>
+                <p class="projects__subtitle">
+                  A python library for explainable group recommender systems.
+                </p>
+
+                <h1 class="projetcs__title">PYGREX</h1>
+
+                <a href="https://github.com/toledomateus/pygrex" class="projects__button">
+                  View Repository <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- ==================== PROJECT 2 ==================== -->
             <div class="projects__content swiper-slide">
               <img src="assets/img/projects/taocp-pt-br.png" alt="projects image" class="projects__img" />
 
               <div>
-                <!-- <p class="projects__subtitle">This project is to translate the acclaimed book The Art of Computer Programming by Donald Knuth, which is open source.</p> -->
                 <p class="projects__subtitle">
-                  Translation for the book<br />The Art of Computer
-                  Programming by Donald Knuth
+                  Portuguese translation of Donald Knuth's book<br />
+                  The Art of Computer Programming (Open Source)
                 </p>
 
-                <h1 class="projetcs__title">TAOCP (Pt-Br)</h1>
+                <h1 class="projetcs__title">TAOCP Portuguese Translation</h1>
 
                 <a href="https://github.com/toledomateus/the-art-of-computer-programming-portuguese"
                   class="projects__button">
-                  View repo <i class="ri-arrow-right-line"></i>
+                  View Repository <i class="ri-arrow-right-line"></i>
                 </a>
               </div>
             </div>
-
-            <!--==================== PROJECTS 4 ====================-->
-
+            <!-- ==================== PROJECT 3 ==================== -->
             <div class="projects__content swiper-slide">
-              <img src="assets/img/projects/multicriteria-ports.webp" alt="projects image" class="projects__img" />
+              <img src="assets/img/projects/interpretable-ml-pt.png" alt="projects image" class="projects__img" />
 
               <div>
-                <!-- <span class="projects__subtitle">This project analyzes the planning of ore production shipped from mining company ports, utilizing multicriteria models.</span> -->
-                <span class="projects__subtitle">Multicriteria Decision-Making in Complex Scenarios<br />for
-                  planning ore production from mining company ports</span>
+                <p class="projects__subtitle">
+                  Portuguese translation of Interpretable Machine Learning:
+                  A Guide for Making Black Box Models Explainable by Christoph Molnar
+                </p>
 
-                <h1 class="projetcs__title">Decision-Making: Ore Export</h1>
+                <h1 class="projetcs__title">Interpretable ML Book - Portuguese Translation</h1>
+                </h1>
+
+                <a href="https://github.com/toledomateus/interpretable-ml-book-pt" class="projects__button">
+                  View Repository <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PROJECT 4 ====================-->
+            <div class="projects__content swiper-slide">
+              <img src="assets/img/projects/multicriteria-ports.png" alt="projects image" class="projects__img" />
+
+              <div>
+                <span class="projects__subtitle">
+                  Multicriteria optimization model for port planning and export shipment.
+                  Achieved 3x accuracy improvement during COVID-19 uncertainty
+                </span>
+
+                <h1 class="projetcs__title">Port Ore Export Optimization and Decision-Making</h1>
 
                 <a href="https://github.com/toledomateus/multicriteria-decision-making-mining-application"
                   class="projects__button">
-                  View repo <i class="ri-arrow-right-line"></i>
+                  View Repository <i class="ri-arrow-right-line"></i>
                 </a>
               </div>
             </div>
 
-            <!--==================== PROJECTS 5 ====================-->
+            <!--==================== PROJECT 3 ====================-->
             <div class="projects__content swiper-slide">
-              <img src="assets/img/projects/free-market-energy.webp" alt="projects image" class="projects__img" />
+              <img src="assets/img/projects/free-market-energy.png" alt="projects image" class="projects__img" />
 
               <div>
-                <!-- <span class="projects__subtitle">This project seeks a strategy to quantitatively analyze financial risks in Brazil's Free Energy Market, helping agents with decision-making by establishing risk metrics for contract portfolios.</span> -->
-                <span class="projects__subtitle">Strategy to quantitatively analyze financial risks in
-                  <br />Brazil's Free Energy Market.<b>Stack:</b> Javascript,
-                  SYDLE ONE</span>
+                <span class="projects__subtitle">
+                  Quantitative financial risk analysis strategy<br />
+                  for Brazil's Free Energy Market
+                </span>
 
                 <h1 class="projetcs__title">
-                  Risk analysis for Enegery Market
+                  Energy Market Risk Analysis
                 </h1>
 
                 <a href="https://github.com/toledomateus/risk-analysis-free-energy-market" class="projects__button">
-                  View repo <i class="ri-arrow-right-line"></i>
+                  View Repository <i class="ri-arrow-right-line"></i>
                 </a>
               </div>
             </div>
@@ -304,476 +487,464 @@
         </div>
       </div>
     </section>
+
     <!--==================== EXPERTISE ====================-->
     <section class="expertise section" id="expertise">
       <h2 class="section__title">Expertise</h2>
       <span class="section__subtitle">
-        I have experience with the following technologies.
+        Technologies and research methodologies
       </span>
 
       <div class="expertise__container container grid section__border">
+        <!--==================== AI/ML Research ====================-->
+        <div class="expertise__content">
+          <h3 class="expertise__title">
+            <i class="ri-brain-line"></i>
+            AI/ML Research
+          </h3>
+
+          <div class="expertise__info">
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/ml/pytorch.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">PyTorch</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/ml/scikit-learn.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">Scikit-learn</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/ml/tensorflow.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">TensorFlow</h3>
+              <span class="expertise__subtitle">Intermediate</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/ml/mlxtend.webp" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">Mlxtend</h3>
+              <span class="expertise__subtitle">Pro experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/ml/xai.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">Explainable AI</h3>
+              <span class="expertise__subtitle">Research focus</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/ml/recsys.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">RecSys</h3>
+              <span class="expertise__subtitle">Research focus</span>
+            </div>
+          </div>
+        </div>
+
+        <!--==================== Computer Vision ====================-->
+        <!-- <div class="expertise__content">
+          <h3 class="expertise__title">
+            <i class="ri-eye-line"></i>
+            Computer Vision
+          </h3>
+
+          <div class="expertise__info">
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/ml/yolo.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">YOLOv5</h3>
+              <span class="expertise__subtitle">Object Detection</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/ml/maskrcnn.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">Mask R-CNN</h3>
+              <span class="expertise__subtitle">Segmentation</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/ml/ocr.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">OCR</h3>
+              <span class="expertise__subtitle">Text Recognition</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/ml/opencv.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">OpenCV</h3>
+              <span class="expertise__subtitle">Intermediate</span>
+            </div>
+          </div>
+        </div> -->
+
+        <!--==================== Optimization ====================-->
+        <div class="expertise__content">
+          <h3 class="expertise__title">
+            <i class="ri-line-chart-line"></i>
+            Optimization & Decision-Making
+          </h3>
+
+          <div class="expertise__info">
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/optimization/gurobi.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">Gurobi</h3>
+              <span class="expertise__subtitle">Research experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/optimization/pulp.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">PuLP</h3>
+              <span class="expertise__subtitle">Research experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/optimization/scipy.svg" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">SciPy</h3>
+              <span class="expertise__subtitle">Research experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/optimization/cvxpy.jpg" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">CVXPY</h3>
+              <span class="expertise__subtitle">Research experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/optimization/fuzzy.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">Fuzzy Logic</h3>
+              <span class="expertise__subtitle">Prof experience</span>
+            </div>
+          </div>
+        </div>
+
+        <!--==================== LLMs & NLP ====================-->
+        <div class="expertise__content">
+          <h3 class="expertise__title">
+            <i class="ri-message-3-line"></i>
+            LLMs & NLP
+          </h3>
+
+          <div class="expertise__info">
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/llm/langchain.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">LangChain</h3>
+              <span class="expertise__subtitle">Research experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/llm/crslab.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">CRSLab</h3>
+              <span class="expertise__subtitle">Research experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/llm/llmops.svg" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">LLMOps</h3>
+              <span class="expertise__subtitle">Certified</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/llm/transformers.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">Transformers</h3>
+              <span class="expertise__subtitle">Intermediate</span>
+            </div>
+          </div>
+        </div>
+
         <!--==================== Languages ====================-->
         <div class="expertise__content">
           <h3 class="expertise__title">
             <i class="ri-terminal-line"></i>
-            Languages
+            Programming Languages
           </h3>
 
           <div class="expertise__info">
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/languages/logo-javascript.svg" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Javascript</h3>
-              <span class="expertise__subtitle">Pro experience</span>
-            </div>
             <div class="expertise__data">
               <div class="expertise__blob">
                 <img src="assets/img/languages/python.png" alt="expertise image" />
               </div>
-
               <h3 class="expertise__name">Python</h3>
-              <span class="expertise__subtitle">Pro experience</span>
+              <span class="expertise__subtitle">Prof experience</span>
             </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/languages/logo-javascript.svg" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">JavaScript</h3>
+              <span class="expertise__subtitle">Prof experience</span>
+            </div>
+
             <div class="expertise__data">
               <div class="expertise__blob">
                 <img src="assets/img/languages/typescript.png" alt="expertise image" />
               </div>
-
-              <h3 class="expertise__name">Typescript</h3>
-              <span class="expertise__subtitle">Interm. experience</span>
+              <h3 class="expertise__name">TypeScript</h3>
+              <span class="expertise__subtitle">Intermediate</span>
             </div>
           </div>
         </div>
-        <!--==================== FRONT END ====================-->
+
+        <!--==================== Data Analysis ====================-->
         <div class="expertise__content">
           <h3 class="expertise__title">
-            <i class="ri-pages-line"></i>
-            Frontend
+            <i class="ri-pie-chart-line"></i>
+            Data Analysis
           </h3>
 
           <div class="expertise__info">
             <div class="expertise__data">
               <div class="expertise__blob">
-                <img src="assets/img/frontend/html-1.svg" alt="expertise image" />
+                <img src="assets/img/data/pandas.png" alt="expertise image" />
               </div>
-
-              <h3 class="expertise__name">HTML</h3>
-              <span class="expertise__subtitle">Interm. experience</span>
-            </div>
-
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/frontend/css-3.svg" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">CSS</h3>
-              <span class="expertise__subtitle">Interm. experience</span>
-            </div>
-
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/frontend/react.svg" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">React</h3>
-              <span class="expertise__subtitle">Interm. experience</span>
-            </div>
-
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/frontend/next.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Next.js</h3>
-              <span class="expertise__subtitle">Interm. experience</span>
-            </div>
-
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/frontend/styled-components.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Sytle Comp.</h3>
-              <span class="expertise__subtitle">Interm. experience</span>
-            </div>
-
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/frontend/tailwind.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Tailwind CSS</h3>
-              <span class="expertise__subtitle">Interm. experience</span>
-            </div>
-
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/frontend/material-ui.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Material UI</h3>
-              <span class="expertise__subtitle">Interm. experience</span>
-            </div>
-          </div>
-        </div>
-        <!--==================== BACK END ====================-->
-        <div class="expertise__content">
-          <h3 class="expertise__title">
-            <i class="ri-braces-line"></i>
-            Backend
-          </h3>
-
-          <div class="expertise__info">
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/backend/node.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Node</h3>
-              <span class="expertise__subtitle">Pro experience</span>
-            </div>
-
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/backend/tornado.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Tornado.py</h3>
-              <span class="expertise__subtitle">Pro experience</span>
-            </div>
-
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/backend/express.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Express.js</h3>
-              <span class="expertise__subtitle">Pro experience</span>
-            </div>
-
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/backend/jwt.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">JWT</h3>
-              <span class="expertise__subtitle">Interm. experience</span>
-            </div>
-
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/devops/bcrypt.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Bcrypt</h3>
-              <span class="expertise__subtitle">Pro experience</span>
-            </div>
-
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/backend/apollo server.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Apollo server</h3>
-              <span class="expertise__subtitle">Interm. experience</span>
-            </div>
-
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/backend/graphql.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">GraphQL</h3>
-              <span class="expertise__subtitle">Interm. experience</span>
-            </div>
-
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/backend/nest.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Nest</h3>
-              <span class="expertise__subtitle">Interm. experience</span>
-            </div>
-          </div>
-        </div>
-        <!--==================== DATA ANALYSIS ====================-->
-        <div class="expertise__content">
-          <h3 class="expertise__title">
-            <i class="ri-line-chart-line"></i>
-            Data analysis
-          </h3>
-
-          <div class="expertise__info">
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/data/jupyterlab.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Jupyterlab</h3>
-              <span class="expertise__subtitle">Pro experience</span>
-            </div>
-
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/data/matplotlib.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Matplotlib</h3>
-              <span class="expertise__subtitle">Pro experience</span>
+              <h3 class="expertise__name">Pandas</h3>
+              <span class="expertise__subtitle">Prof experience</span>
             </div>
 
             <div class="expertise__data">
               <div class="expertise__blob">
                 <img src="assets/img/data/numpy.png" alt="expertise image" />
               </div>
-
-              <h3 class="expertise__name">Numpy</h3>
-              <span class="expertise__subtitle">Pro experience</span>
+              <h3 class="expertise__name">NumPy</h3>
+              <span class="expertise__subtitle">Prof experience</span>
             </div>
 
             <div class="expertise__data">
               <div class="expertise__blob">
-                <img src="assets/img/data/pandas.png" alt="expertise image" />
+                <img src="assets/img/data/matplotlib.png" alt="expertise image" />
               </div>
-
-              <h3 class="expertise__name">Pandas</h3>
-              <span class="expertise__subtitle">Pro experience</span>
+              <h3 class="expertise__name">Matplotlib</h3>
+              <span class="expertise__subtitle">Prof experience</span>
             </div>
 
             <div class="expertise__data">
               <div class="expertise__blob">
                 <img src="assets/img/data/seaborn.png" alt="expertise image" />
               </div>
-
               <h3 class="expertise__name">Seaborn</h3>
-              <span class="expertise__subtitle">Pro experience</span>
+              <span class="expertise__subtitle">Prof experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/data/jupyterlab.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">JupyterLab</h3>
+              <span class="expertise__subtitle">Prof experience</span>
             </div>
           </div>
         </div>
-        <!--==================== DATA BASE ====================-->
+
+        <!--==================== SOFTWARE DEVELOPMENT ====================-->
+        <div class="expertise__content">
+          <h3 class="expertise__title">
+            <i class="ri-pages-line"></i>
+            Software Development
+          </h3>
+          <div class="expertise__info">
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/frontend/next.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">Next.js</h3>
+              <span class="expertise__subtitle">Intermediate</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/frontend/material-ui.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">Material UI</h3>
+              <span class="expertise__subtitle">Intermediate</span>
+            </div>
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/backend/node.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">Node.js</h3>
+              <span class="expertise__subtitle">Prof experience</span>
+            </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/backend/tornado.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">Tornado</h3>
+              <span class="expertise__subtitle">Prof experience</span>
+            </div>
+          </div>
+        </div>
+
+        <!--==================== DATABASE ====================-->
         <div class="expertise__content">
           <h3 class="expertise__title">
             <i class="ri-database-2-line"></i>
-            Database
+            Database & Cloud
           </h3>
 
           <div class="expertise__info">
             <div class="expertise__data">
               <div class="expertise__blob">
-                <img src="assets/img/database/aws.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">AWS</h3>
-              <span class="expertise__subtitle">Pro experience</span>
-            </div>
-
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/database/elasticsearch.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Elasticsearch</h3>
-              <span class="expertise__subtitle">Pro experience</span>
-            </div>
-
-            <div class="expertise__data">
-              <div class="expertise__blob">
                 <img src="assets/img/database/mongodb.png" alt="expertise image" />
               </div>
-
               <h3 class="expertise__name">MongoDB</h3>
-              <span class="expertise__subtitle">Pro experience</span>
+              <span class="expertise__subtitle">Prof experience</span>
             </div>
 
             <div class="expertise__data">
               <div class="expertise__blob">
                 <img src="assets/img/database/postgreSQL.png" alt="expertise image" />
               </div>
-
               <h3 class="expertise__name">PostgreSQL</h3>
-              <span class="expertise__subtitle">Pro experience</span>
+              <span class="expertise__subtitle">Prof experience</span>
             </div>
 
             <div class="expertise__data">
               <div class="expertise__blob">
-                <img src="assets/img/database/heroku.png" alt="expertise image" />
+                <img src="assets/img/database/elasticsearch.png" alt="expertise image" />
               </div>
-
-              <h3 class="expertise__name">Heroku</h3>
-              <span class="expertise__subtitle">Interm. experience</span>
+              <h3 class="expertise__name">Elasticsearch</h3>
+              <span class="expertise__subtitle">Prof experience</span>
             </div>
+
+            <div class="expertise__data">
+              <div class="expertise__blob">
+                <img src="assets/img/database/aws.png" alt="expertise image" />
+              </div>
+              <h3 class="expertise__name">AWS</h3>
+              <span class="expertise__subtitle">Prof experience</span>
+            </div>
+
           </div>
         </div>
-        <!--==================== DevOps ====================-->
+
+        <!--==================== DevOps & Tools ====================-->
         <div class="expertise__content">
           <h3 class="expertise__title">
             <i class="ri-file-settings-line"></i>
-            Tools/Test
+            DevOps & Tools
           </h3>
+
           <div class="expertise__info">
             <div class="expertise__data">
               <div class="expertise__blob">
                 <img src="assets/img/devops/docker.png" alt="expertise image" />
               </div>
-
               <h3 class="expertise__name">Docker</h3>
-              <span class="expertise__subtitle">Pro experience</span>
+              <span class="expertise__subtitle">Prof experience</span>
             </div>
+
             <div class="expertise__data">
               <div class="expertise__blob">
                 <img src="assets/img/devops/git-icon.svg" alt="expertise image" />
               </div>
-
               <h3 class="expertise__name">Git</h3>
-              <span class="expertise__subtitle">Pro experience</span>
-            </div>
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/devops/eslint.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">ESLint</h3>
-              <span class="expertise__subtitle">Pro experience</span>
-            </div>
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/devops/coveralls.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Coveralls</h3>
-              <span class="expertise__subtitle">
-                code coverage <br />
-                Interm. experience
-              </span>
+              <span class="expertise__subtitle">Prof experience</span>
             </div>
 
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/devops/faker.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Faker</h3>
-              <span class="expertise__subtitle">
-                info generate<br />
-                Interm. experience
-              </span>
-            </div>
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/devops/husky.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Husky</h3>
-              <span class="expertise__subtitle">
-                pre-commit<br />
-                Interm. experience
-              </span>
-            </div>
             <div class="expertise__data">
               <div class="expertise__blob">
                 <img src="assets/img/devops/jest.png" alt="expertise image" />
               </div>
-
               <h3 class="expertise__name">Jest</h3>
-              <span class="expertise__subtitle">
-                Test lib<br />
-                Interm. experience
-              </span>
+              <span class="expertise__subtitle">Testing</span>
             </div>
+
             <div class="expertise__data">
               <div class="expertise__blob">
-                <img src="assets/img/devops/trevisci.png" alt="expertise image" />
+                <img src="assets/img/devops/pytest.png" alt="expertise image" />
               </div>
-
-              <h3 class="expertise__name">Trevis CI</h3>
-              <span class="expertise__subtitle">
-                CI/CD<br />
-                Interm. experience
-              </span>
+              <h3 class="expertise__name">Pytest</h3>
+              <span class="expertise__subtitle">Testing</span>
             </div>
-          </div>
-        </div>
-        <!--==================== Documentation ====================-->
-        <div class="expertise__content">
-          <h3 class="expertise__title">
-            <i class="ri-book-open-line"></i>
-            Documentation
-          </h3>
 
-          <div class="expertise__info">
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/documentation/bpms.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">BPM / BPMS</h3>
-              <span class="expertise__subtitle">Pro experience</span>
-            </div>
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/documentation/sydleone.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">SYDLE ONE</h3>
-              <span class="expertise__subtitle">Pro experience</span>
-            </div>
-            <div class="expertise__data">
-              <div class="expertise__blob">
-                <img src="assets/img/documentation/swagger.png" alt="expertise image" />
-              </div>
-
-              <h3 class="expertise__name">Swagger</h3>
-              <span class="expertise__subtitle">Interm. experience</span>
-            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!--==================== SERVICES ====================-->
-    <section class="services section" id="services">
+    <!-- <section class="services section" id="services">
       <h2 class="section__title">Services</h2>
-      <span class="section__subtitle">How I can help your company</span>
+      <span class="section__subtitle">How I can help your organization</span>
+
       <div class="services__container container grid section__border">
         <div class="services__card">
-          <i class="ri-terminal-window-fill"></i>
-          <h2 class="services__title">Backend developtment</h2>
+          <i class="ri-brain-line"></i>
+          <h2 class="services__title">AI Research & Development</h2>
           <p class="services__description">
-            Proficiency in delivering backend applications and integrations
-            with 3rd party APIs.Design and implement new APIs or maintain
-            existing ones.
+            Expertise in Explainable AI, Recommender Systems, and Fairness in AI.
+            Developing transparent and trustworthy AI solutions for complex decision-making scenarios.
+            Research-driven approach with practical implementation.
           </p>
           <div class="services__border"></div>
         </div>
+
         <div class="services__card">
-          <i class="ri-pie-chart-box-line"></i>
-          <h2 class="services__title">Data analytics</h2>
+          <i class="ri-line-chart-line"></i>
+          <h2 class="services__title">Optimization & Decision-Making</h2>
           <p class="services__description">
-            Experience in data analysis pipelines, from data cleaning to
-            delivering machine learning models. Skilled in enabling
-            stakeholders to make the best decisions under uncertain scenarios.
+            Multicriteria optimization models for complex scenarios under uncertainty.
+            Experience in developing solutions that improve decision accuracy by up to 3x,
+            enabling stakeholders to make robust data-driven decisions.
           </p>
           <div class="services__border"></div>
         </div>
+
         <div class="services__card">
-          <i class="ri-layout-2-line"></i>
-          <h2 class="services__title">Frontend developtment</h2>
+          <i class="ri-code-box-line"></i>
+          <h2 class="services__title">Full Stack Development</h2>
           <p class="services__description">
-            Proficiency in delivering frontend applications to design and
-            create new interfaces or maintain existing ones.
+            End-to-end software engineering from backend APIs to frontend interfaces.
+            Proficient in modern web technologies, cloud services, and integrations.
+            Building scalable applications with clean architecture principles.
           </p>
           <div class="services__border"></div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!--==================== CONTACT ====================-->
     <section class="contact section" id="contact">
-      <h2 class="section__title">Contact me</h2>
-      <span class="section__subtitle"> Get in touch </span>
+      <h2 class="section__title">Contact Me</h2>
+      <span class="section__subtitle">Get in touch</span>
 
       <div class="contact__container container grid section__border">
         <div class="contact__content">
@@ -783,45 +954,61 @@
 
           <div class="contact__info">
             <div class="contact__data">
-              <span class="contact__data-title">Email</span>
-              <span class="contact__data-info">me@toledomateus.com</span>
+              <span class="contact__data-title">Email (email mask, don't worry)</span>
+              <span class="contact__data-info">hike.agate2262@eagereverest.com</span>
+              <a href="mailto:hike.agate2262@eagereverest.com" class="contact__button">
+                Send email <i class="ri-arrow-right-line"></i>
+              </a>
             </div>
 
-            <div class="contact__data">
-              <span class="contact__data-title">Whatsapp</span>
-              <span class="contact__data-info">+353 87 475 2975</span>
-              <a href="https://api.whatsapp.com/send?phone=353874752975&text=Hi, how are you? I noticed your portfolio and I'd like to have a chat about it!"
+            <!-- <div class="contact__data">
+              <span class="contact__data-title">WhatsApp</span>
+              <span class="contact__data-info">[PHONE NUMBER]</span>
+              <a href="https://api.whatsapp.com/send?phone=[PHONE NUMBER]&text=Hi%20Mateus!%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect."
                 target="_blank" class="contact__button">
                 Write me <i class="ri-arrow-right-line"></i>
               </a>
+            </div> -->
+
+            <div class="contact__data">
+              <span class="contact__data-title">Location</span>
+              <span class="contact__data-info">Jaén, Spain</span>
             </div>
+
+            <div class="contact__data">
+              <a href="assets/files/cv.pdf" download="Mateus_Toledo_CV.pdf" class="contact__button contact__cv-button">
+                <i class="ri-download-line"></i> Download CV
+              </a>
+            </div>
+
           </div>
         </div>
+
         <div class="contact__content">
           <h3 class="contact__title">
-            <i class="ri-send-plane-line"></i> Send me an email
+            <i class="ri-send-plane-line"></i> Send me a message
           </h3>
 
           <form action="" class="contact__form" id="contact-form">
             <div class="contact__form-div">
               <label class="contact__form-tag">Name</label>
-              <input type="text" name="user_name" required placeholder="Write your name" class="contact__form-input"
+              <input type="text" name="user_name" required placeholder="Your name" class="contact__form-input"
                 id="contact-name" />
             </div>
 
             <div class="contact__form-div">
               <label class="contact__form-tag">Email</label>
-              <input type="text" name="user_email" required placeholder="Write your email" class="contact__form-input"
+              <input type="email" name="user_email" required placeholder="Your email" class="contact__form-input"
                 id="contact-email" />
             </div>
 
             <div class="contact__form-div contact__form-area">
-              <label class="contact__form-tag">Subject</label>
-              <textarea name="user_subject" placeholder="Tell me your subject..." id="contact-subject"
-                class="contact__form-input"></textarea>
+              <label class="contact__form-tag">Message</label>
+              <textarea name="user_message" required placeholder="Tell me about your project or inquiry..."
+                id="contact-message" class="contact__form-input" rows="5"></textarea>
             </div>
 
-            <p class="contact__mesage" id="contact-message"></p>
+            <p class="contact__message" id="contact-status"></p>
             <button type="submit" class="contact__button">
               Submit <i class="ri-arrow-right-up-line"></i>
             </button>
@@ -834,18 +1021,24 @@
   <!--==================== FOOTER ====================-->
   <footer class="footer">
     <div class="footer__container container">
-      <h1 class="footer__title">Mateus</h1>
-      <p>Software Engineer</p>
+      <h1 class="footer__title">Mateus Toledo</h1>
+      <p>AI Researcher & Software Engineer</p>
 
       <ul class="footer__list">
         <li>
-          <a href="#home" class="footer__link active-link">Home</a>
+          <a href="#home" class="footer__link">Home</a>
         </li>
         <li>
           <a href="#experience" class="footer__link">Experience</a>
         </li>
         <li>
+          <a href="#publications" class="footer__link">Publications</a>
+        </li>
+        <li>
           <a href="#projects" class="footer__link">Projects</a>
+        </li>
+        <li>
+          <a href="#contact" class="footer__link">Contact</a>
         </li>
       </ul>
 
@@ -858,13 +1051,17 @@
           <i class="ri-github-line"></i>
         </a>
 
-        <a href="https://dev.to/toledomateus" target="_blank" class="footer__social-link">
-          <i class="ri-code-box-line"></i>
+        <a href="https://orcid.org/0009-0006-4387-6481" target="_blank" class="footer__social-link">
+          <i class="ri-article-line"></i>
+        </a>
+
+        <a href="https://www.researchgate.net/profile/Mateus-Toledo" target="_blank" class="footer__social-link">
+          <i class="ri-file-list-3-line"></i>
         </a>
       </ul>
 
       <span class="footer__copy">
-        &#169; Copyright Mateus Toledo. All rights reserved
+        &#169; 2025 Mateus Toledo. All rights reserved
       </span>
     </div>
   </footer>
@@ -873,6 +1070,7 @@
   <a href="#" class="scrollup" id="scroll-up">
     <i class="ri-arrow-up-line"></i>
   </a>
+
   <!--=============== SCROLLREVEAL ===============-->
   <script src="assets/js/scrollreveal.min.js"></script>
 

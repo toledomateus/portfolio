@@ -28,33 +28,46 @@ const linkAction = () => {
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /*=============== SWIPER PROJECTS ===============*/
-
+/*=============== SWIPER PROJECTS ===============*/
 let swiperProjects = new Swiper(".projects__container", {
   loop: true,
+  grabCursor: true,
   spaceBetween: 24,
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
+
   breakpoints: {
-    1200: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
       slidesPerView: 2,
-      spaceBetween: -56,
-    }
+      spaceBetween: 28,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+      centeredSlides: false,
+    },
   },
 });
-
 /*=============== SWIPER TESTIMONIAL ===============*/
 
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById('contact-form'),
-    contactName = document.getElementById('contact-name'),
-    contactEmail = document.getElementById('contact-email'),
-    contactSubject = document.getElementById('contact-subject'),
-    contactMessage = document.getElementById('contact-message')
+  contactName = document.getElementById('contact-name'),
+  contactEmail = document.getElementById('contact-email'),
+  contactSubject = document.getElementById('contact-subject'),
+  contactMessage = document.getElementById('contact-message')
 
 const sendEmail = (e) => {
   e.preventDefault()
@@ -62,7 +75,7 @@ const sendEmail = (e) => {
   const isEmpty = contactName.value === '' ||
     contactEmail.value === '' ||
     contactSubject.value === ''
-  if(isEmpty) {
+  if (isEmpty) {
 
     //Change to warning message
     contactMessage.classList.remove('color-blue')
@@ -72,7 +85,7 @@ const sendEmail = (e) => {
 
   } else {
     //email.sondForm('serviceID','templateID','#formID', publickey)
-    emailjs.sendForm('service_z9xyrpn','template_dbhr3sh','#contact-form','p1JtK1k9_B7TcdE3R')
+    emailjs.sendForm('service_z9xyrpn', 'template_dbhr3sh', '#contact-form', 'p1JtK1k9_B7TcdE3R')
       .then(() => {
         contactMessage.classList.add('color-blue')
         contactMessage.textContent = 'Message sent ✅'
@@ -81,14 +94,14 @@ const sendEmail = (e) => {
           contactMessage.textContent = ''
         }, 5000)
 
-      }, (error)=>{
+      }, (error) => {
         alert('Sorry! Something has failed: ', error)
       })
-    
+
     contactName.value = '',
-    contactEmail.value= '',
-    contactSubject.value = ''
-      
+      contactEmail.value = '',
+      contactSubject.value = ''
+
   }
 
 
@@ -96,32 +109,32 @@ const sendEmail = (e) => {
 contactForm.addEventListener('submit', sendEmail)
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
-    
-const scrollActive = () =>{
-  	const scrollDown = window.scrollY
 
-	sections.forEach(current =>{
-		const sectionHeight = current.offsetHeight,
-			  sectionTop = current.offsetTop - 58,
-			  sectionId = current.getAttribute('id'),
-			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+const scrollActive = () => {
+  const scrollDown = window.scrollY
 
-		if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
-			sectionsClass.classList.add('active-link')
-		}else{
-			sectionsClass.classList.remove('active-link')
-		}                                                    
-	})
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight,
+      sectionTop = current.offsetTop - 58,
+      sectionId = current.getAttribute('id'),
+      sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+
+    if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
+      sectionsClass.classList.add('active-link')
+    } else {
+      sectionsClass.classList.remove('active-link')
+    }
+  })
 }
 window.addEventListener('scroll', scrollActive)
 
 
 /*=============== SHOW SCROLL UP ===============*/
-const scrollUp = () =>{
-	const scrollUp = document.getElementById('scroll-up')
-    // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
-	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
-						: scrollUp.classList.remove('show-scroll')
+const scrollUp = () => {
+  const scrollUp = document.getElementById('scroll-up')
+  // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
+  this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+    : scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
 
@@ -147,19 +160,19 @@ if (selectedTheme) {
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
+  // Add or remove the dark / icon theme
+  document.body.classList.toggle(darkTheme)
+  themeButton.classList.toggle(iconTheme)
+  // We save the theme and the current icon that the user chose
+  localStorage.setItem('selected-theme', getCurrentTheme())
+  localStorage.setItem('selected-icon', getCurrentIcon())
 })
 /*=============== CHANGE BACKGROUND HEADER ===============*/
-const scrollHeader = () =>{
+const scrollHeader = () => {
   const header = document.getElementById('header')
   // Add a class if the bottom offset is greater than 50 of the viewport
-  this.scrollY >= 50 ? header.classList.add('bg-header') 
-                     : header.classList.remove('bg-header')
+  this.scrollY >= 50 ? header.classList.add('bg-header')
+    : header.classList.remove('bg-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
@@ -168,12 +181,12 @@ const sr = ScrollReveal({
   origin: 'top',
   distance: '60px',
   duration: 2500,
-  delay:400,
+  delay: 400,
   // reset: true /* Animations repeat */
 })
 
 sr.reveal('.home__data , .projects__container , .footer__container')
-sr.reveal('.home__info', {delay: 600, origin: 'bottom', interval:100})
-sr.reveal('.expertise__content:nth-child(1), .contact__content:nth-child(1)', {delay: 600, origin: 'left'})
-sr.reveal('.expertise__content:nth-child(2), .contact__content:nth-child(2)', {delay: 600, origin: 'right'})
-sr.reveal('.experience__content, .services__card', {interval: 100})
+sr.reveal('.home__info', { delay: 600, origin: 'bottom', interval: 100 })
+sr.reveal('.expertise__content:nth-child(1), .contact__content:nth-child(1)', { delay: 600, origin: 'left' })
+sr.reveal('.expertise__content:nth-child(2), .contact__content:nth-child(2)', { delay: 600, origin: 'right' })
+sr.reveal('.experience__content, .services__card', { interval: 100 })
