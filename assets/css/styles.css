@@ -1629,50 +1629,123 @@ body.dark-theme {
 
 /*=============== PUBLICATIONS ===============*/
 .publications__container {
-  row-gap: 2rem;
+  row-gap: 0.5rem;
 }
 
 .publications__content {
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
   grid-template-columns: 1fr;
 }
 
 .publications__item {
-  background-color: var(--container-color);
+  background-color: hsl(0deg 0% 99.99%);
   border-radius: 1rem;
-  padding: 1.5rem;
-  transition: background .4s, transform .3s;
+  padding: 1rem;
+  transition: background .4s, transform .3s, box-shadow .3s;
+  position: relative;
 }
 
 .publications__item:hover {
   transform: translateY(-4px);
+  box-shadow: 0 8px 24px hsla(207, 24%, 35%, .15);
+}
+
+/* Publication Tags */
+.publications__tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.publications__tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: var(--tiny-font-size);
+  font-weight: var(--font-medium);
+  font-family: var(--body-font);
+  transition: transform .2s;
+}
+
+.publications__tag:hover {
+  transform: scale(1.05);
+}
+
+/* Tag Types */
+.publications__tag--journal {
+  background-color: rgba(99, 102, 241, 0.15);
+  color: rgb(79, 70, 229);
+}
+
+.publications__tag--conference {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: rgb(5, 150, 105);
+}
+
+.publications__tag--book {
+  background-color: rgba(245, 158, 11, 0.15);
+  color: rgb(217, 119, 6);
+}
+
+.publications__tag--thesis {
+  background-color: rgba(10, 0, 86, 0.15);
+  color: rgb(17, 8, 84);
+}
+
+/* Dark theme tag adjustments */
+.dark-theme .publications__tag--journal {
+  background-color: rgba(99, 102, 241, 0.25);
+  color: rgb(129, 140, 248);
+}
+
+.dark-theme .publications__tag--conference {
+  background-color: rgba(16, 185, 129, 0.25);
+  color: rgb(52, 211, 153);
+}
+
+.dark-theme .publications__tag--book {
+  background-color: rgba(245, 158, 11, 0.25);
+  color: rgb(251, 191, 36);
+}
+
+.dark-theme .publications__tag--thesis {
+  background-color: rgba(88, 72, 236, 0.25);
+  color: rgb(15, 131, 177);
 }
 
 .publications__title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
-  margin-bottom: .75rem;
-  line-height: 1.5;
+  margin-bottom: 0.875rem;
+  /* Increased from .75rem */
+  line-height: 1.6;
+  /* Increased from 1.5 */
   font-family: var(--title-font);
 }
 
 .publications__authors {
   font-size: var(--small-font-size);
   color: var(--text-color);
-  margin-bottom: .5rem;
+  margin-bottom: 0.625rem;
+  /* Increased from .5rem */
   font-style: italic;
   font-family: var(--body-font);
   font-weight: 400;
+  line-height: 1.5;
 }
 
 .publications__venue {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  /* Increased from 1rem */
   font-family: var(--body-font);
   font-weight: 400;
+  line-height: 1.5;
 }
 
 .publications__link {
@@ -1703,14 +1776,14 @@ body.dark-theme {
 /* Responsive adjustments for publications */
 @media screen and (min-width: 576px) {
   .publications__content {
-    gap: 2rem;
+    gap: 2.5rem;
   }
 }
 
 @media screen and (min-width: 767px) {
   .publications__content {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 2.5rem;
   }
 }
 
@@ -1720,25 +1793,35 @@ body.dark-theme {
   }
 
   .publications__content {
-    gap: 2.5rem;
+    gap: 3rem;
+    /* Increased from 2.5rem */
   }
 
   .publications__item {
-    padding: 2rem;
+    padding: 2.5rem;
+    /* Increased from 2rem */
   }
 
   .publications__title {
     font-size: var(--h3-font-size);
-    margin-bottom: 1rem;
+    margin-bottom: 1.125rem;
+    /* Increased from 1rem */
   }
 
   .publications__authors {
     font-size: var(--normal-font-size);
-    margin-bottom: .75rem;
+    margin-bottom: 0.875rem;
+    /* Increased from .75rem */
   }
 
   .publications__venue {
     font-size: var(--normal-font-size);
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
+    /* Increased from 1.25rem */
+  }
+
+  .publications__tag {
+    font-size: var(--smaller-font-size);
+    padding: 0.35rem 0.85rem;
   }
 }
